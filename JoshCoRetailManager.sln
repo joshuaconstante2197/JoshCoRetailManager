@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRMDataManager", "JRMDataManager\JRMDataManager.csproj", "{2E14EFFF-DC02-4169-8ABF-71ED3FE9BB4E}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JRMData", "JRMData\JRMData.sqlproj", "{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JRMDesktopUI", "JRMDesktopUI\JRMDesktopUI.csproj", "{1D17624E-9997-4ED5-8957-77BAB5C06F45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{2E14EFFF-DC02-4169-8ABF-71ED3FE9BB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E14EFFF-DC02-4169-8ABF-71ED3FE9BB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E14EFFF-DC02-4169-8ABF-71ED3FE9BB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD14EB3-63F5-4B9F-B26B-F08CFA0BAC99}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1D17624E-9997-4ED5-8957-77BAB5C06F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D17624E-9997-4ED5-8957-77BAB5C06F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D17624E-9997-4ED5-8957-77BAB5C06F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D17624E-9997-4ED5-8957-77BAB5C06F45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
