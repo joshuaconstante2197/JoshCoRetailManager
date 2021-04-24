@@ -1,0 +1,1 @@
+﻿Insert into [dbo].[User] (Id,FirstName,LastName,EmailAddress)values('5577e361-9803-4184-b029-15819b9068d0','Josh','Constante','josh@hotmail.com')

@@ -61,6 +61,8 @@
     <Folder Include="dbo\Views" />
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="PublishLocations" />
+    <Folder Include="StoredProcedures" />
+    <Folder Include="DumyDataScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\User.sql" />
@@ -68,11 +70,13 @@
     <Build Include="dbo\Tables\SaleDetail.sql" />
     <Build Include="dbo\Tables\Product.sql" />
     <Build Include="dbo\Tables\Inventory.sql" />
+    <Build Include="StoredProcedures\spUserLookup.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="JRMData.refactorlog" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\JRMData.publish.xml" />
+    <None Include="DumyDataScripts\DummyData.sql" />
   </ItemGroup>
 </Project>
