@@ -1,5 +1,7 @@
 ﻿using Caliburn.Micro;
 using JRMDesktopUI.Helpers;
+using JRMDesktopUI.Library.Api;
+using JRMDesktopUI.Library.Models;
 using JRMDesktopUI.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -31,7 +33,8 @@ namespace JRMDesktopUI
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
-                .Singleton<IAPIHelper, APIHelper>();
+                .Singleton<IAPIHelper, APIHelper>()
+                .Singleton<ILoggedInUserModel, LoggedInUserModel>();
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
