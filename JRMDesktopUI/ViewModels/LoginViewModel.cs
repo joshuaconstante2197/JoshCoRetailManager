@@ -3,6 +3,7 @@ using JRMDesktopUI.Library;
 using System;
 using System.Threading.Tasks;
 using JRMDesktopUI.Library.Api;
+using JRMDesktopUI.EventModels;
 
 namespace JRMDesktopUI.ViewModels
 {
@@ -11,10 +12,12 @@ namespace JRMDesktopUI.ViewModels
         private string _userName;
         private string _password;
         private IAPIHelper _apiHelper;
+        private IEventAggregator _events;
         private string _errorMessage;
-        public LoginViewModel(IAPIHelper apiHelper)
+        public LoginViewModel(IAPIHelper apiHelper, IEventAggregator events)
         {
             _apiHelper = apiHelper;
+            _events = events;
         }
 
         public string UserName
@@ -93,6 +96,8 @@ namespace JRMDesktopUI.ViewModels
 
                 //Capture more information about hte user
                 await _apiHelper.GetLoggedUnserInfo(result.Access_Token);
+
+                _events.PublishOnUIThread(new LogOnEvent());
 
             }
             catch (Exception ex)
