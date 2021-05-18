@@ -31,9 +31,15 @@
         <TextBlock Text="Sales Page" FontSize="40" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Margin="0 0 0 20"/>
         <!-- Column 0-->
         <TextBlock Text="Items" Grid.Row="1" Grid.Column="1"  />
-        <ListBox x:Name="Products" Grid.Row="3" Grid.Column="1"  MinHeight="100" MinWidth="150" />
+        <ListBox x:Name="Products" Grid.Row="3" Grid.Column="1"  MinHeight="100" MinWidth="150">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding ProductName}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
-        <!-- Column 1-->
+            <!-- Column 1-->
         <StackPanel Orientation="Vertical" Grid.Column="2"
                     Grid.Row="3" Margin="20 0">
             <TextBlock Text="Quantity"/>
@@ -45,6 +51,7 @@
         <!-- Column 2 -->
         <TextBlock Text="Cart" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2"/>
         <ListBox x:Name="Cart" Grid.Row="3" Grid.Column="3" MinHeight="100" MinWidth="150" />
+
         <DockPanel Grid.Row="4" Grid.Column="3" >
             <TextBlock Text="Subtotal:" Margin="0 0 20 0" />
             <TextBlock x:Name="SubTotal" Grid.Row="2" Grid.Column="2" Text="$0.00" TextAlignment="Right"/>

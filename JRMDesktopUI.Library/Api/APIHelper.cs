@@ -23,6 +23,14 @@ namespace JRMDesktopUI.Library.Api
             _loggedInUserModel = loggedInUserModel;
         }
 
+        public HttpClient ApiClient 
+        {
+            get
+            {
+                return _apiClient;
+            }
+        }
+
         private void InitializeClient()
         {
             string api = ConfigurationManager.AppSettings["api"];
